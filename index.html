@@ -73,7 +73,7 @@
 <div class="wrap">
   <div class="card">
     <h1>Privacy Policy for AuraFitness</h1>
-    <p class="updated">Last updated: August 13, 2026</p>
+    <p class="updated">Last updated: August 18, 2026</p>
 
     <p class="intro">This policy covers what AuraFitness accesses on your
       device and why. If cloud sync is enabled in a future release, this
@@ -88,11 +88,27 @@
     <h2>Data this app accesses, and why</h2>
     <ul>
       <li><strong>Camera</strong>: used locally to detect and count body
-        movements during workout mini-games (e.g. pushup tracking) and to
-        power the bio-scanner&rsquo;s outfit/pose photo feature. Camera
-        frames are processed on-device for pose detection; a photo is only
-        saved if you explicitly capture one (e.g. for a profile picture or
-        a bio-scanner rating share).</li>
+        movements during workout mini-games (e.g. pushup tracking). Camera
+        frames are processed on-device for pose detection during these
+        mini-games and are never saved or transmitted anywhere. A photo is
+        only saved or sent elsewhere if you explicitly capture one for a
+        specific feature &mdash; see &ldquo;Bio-scanner and Meal Scanner
+        (Google Gemini)&rdquo; below for the one case where that
+        happens.</li>
+      <li><strong>Bio-scanner and Meal Scanner (Google Gemini)</strong>:
+        these two features let you photograph yourself (Bio-scanner) or a
+        meal (Meal Scanner) to get an AI-generated rating or breakdown. To
+        do this, the photo you capture is sent to Google&rsquo;s Gemini API
+        for analysis and is not processed on-device. This only happens if
+        you&rsquo;ve entered your own Google Gemini API key in the app
+        (Settings) and then explicitly use one of these two features
+        &mdash; the key and the resulting photo upload are both under your
+        control, and the feature does nothing until you supply a key. Your
+        Gemini API key is stored using your device&rsquo;s secure
+        keychain/keystore, never in plaintext. Use of the Gemini API for
+        this analysis is subject to
+        <a href="https://policies.google.com/privacy">Google&rsquo;s own
+        privacy policy</a>.</li>
       <li><strong>Microphone</strong>: used locally during the &ldquo;Vocal
         Surge&rdquo; mini-game to measure volume (decibels). Audio is not
         recorded to a file or transmitted anywhere &mdash; only the
@@ -126,7 +142,10 @@
         added, and this section will be updated to describe it before that
         release ships.</li>
       <li><strong>Photos</strong>: a profile picture you choose is stored
-        locally only.</li>
+        locally only. A Bio-scanner or Meal Scanner photo is sent to
+        Google&rsquo;s Gemini API for analysis (see above) and is otherwise
+        stored locally only; AuraFitness itself does not keep a copy on any
+        server.</li>
     </ul>
 
     <h2>What this app does NOT do</h2>
@@ -136,9 +155,13 @@
         one is added later &mdash; e.g. Firebase Crashlytics/Analytics
         &mdash; this section will be updated to disclose it before that
         release ships.)</li>
-      <li>Camera and microphone data are not uploaded or shared with
-        third parties; they&rsquo;re processed on-device for the features
-        described above.</li>
+      <li>Workout-tracking camera frames and microphone audio are never
+        uploaded or shared with anyone; they&rsquo;re processed on-device
+        only. The one exception is the optional Bio-scanner / Meal Scanner
+        features, which do send a photo you explicitly capture to
+        Google&rsquo;s Gemini API &mdash; see &ldquo;Bio-scanner and Meal
+        Scanner (Google Gemini)&rdquo; above for details on when and
+        why.</li>
     </ul>
 
     <h2>Your choices</h2>
