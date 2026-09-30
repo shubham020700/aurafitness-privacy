@@ -73,65 +73,82 @@
 <div class="wrap">
   <div class="card">
     <h1>Privacy Policy for Aura Leveling</h1>
-    <p class="updated">Last updated: September 27, 2026</p>
+    <p class="updated">Last updated: September 30, 2026</p>
 
     <p class="intro">This policy covers what Aura Leveling accesses on your
-      device and why. If cloud sync is enabled in a future release, this
-      page will be updated to match before that release ships.</p>
+      device and why. If cloud sync, or any feature that sends data off the
+      device, is enabled in a future release, this page will be updated to
+      match before that release ships.</p>
 
     <h2>What this app is</h2>
     <p>Aura Leveling is a gamified fitness app: verified real-world workouts
-      (camera-tracked pushups, voice-tracked &ldquo;vocal surge&rdquo;
+      (camera-tracked exercises, voice-tracked &ldquo;Vocal Surge&rdquo;
       challenges, pedometer-tracked steps) power up a fighter character
-      used in the app&rsquo;s game modes. Aura Leveling is not a medical
-      device and does not diagnose, treat, cure, or prevent any medical
-      condition.</p>
+      used in the app&rsquo;s game modes. It also includes multi-week
+      training programs, diet guidance and a workout tracker. Aura Leveling
+      is not a medical device and does not diagnose, treat, cure, or
+      prevent any medical condition.</p>
 
     <h2>Data this app accesses, and why</h2>
     <ul>
       <li><strong>Camera</strong>: used locally to detect and count body
-        movements during workout mini-games (e.g. pushup tracking). Camera
-        frames are processed on-device for pose detection during these
-        mini-games and are never saved or transmitted anywhere. A photo is
-        only saved or sent elsewhere if you explicitly capture one for a
-        specific feature &mdash; see &ldquo;Bio-scanner and Meal Scanner
-        (Google Gemini)&rdquo; below for the one case where that
-        happens.</li>
-      <li><strong>Bio-scanner and Meal Scanner (Google Gemini)</strong>:
-        these two features let you photograph yourself (Bio-scanner) or a
-        meal (Meal Scanner) to get an AI-generated rating or breakdown. To
-        do this, the photo you capture is sent to Google&rsquo;s Gemini API
-        for analysis and is not processed on-device. This only happens if
-        you&rsquo;ve entered your own Google Gemini API key in the app
-        (Settings) and then explicitly use one of these two features
-        &mdash; the app shows an on-screen confirmation before the photo is
-        sent, and the key and the resulting photo upload are both under
-        your control, and the feature does nothing until you supply a key.
-        Your Gemini API key is stored using your device&rsquo;s secure
-        keychain/keystore, never in plaintext. The rating or breakdown you
-        get back is AI-generated and labeled as such in the app. Use of the
-        Gemini API for this analysis is subject to
+        movements during workouts (e.g. push-up and sit-up tracking).
+        Camera frames are processed on-device for pose detection and are
+        never saved or transmitted anywhere. A photo is only sent elsewhere
+        if you explicitly take one for one of the AI photo features &mdash;
+        see &ldquo;AI photo features (Google Gemini)&rdquo; below, the only
+        case where that happens.</li>
+      <li><strong>AI photo features (Google Gemini)</strong>: three features
+        let you take a photo and get an AI-generated result:
+        <ul>
+          <li><strong>Aura Selfie (Bio-scanner)</strong> &mdash; rates your
+            pose or outfit;</li>
+          <li><strong>Aura Selfie Fight</strong> &mdash; rates a fighting
+            pose you strike, to decide a fun pose battle;</li>
+          <li><strong>Meal Scanner</strong> &mdash; estimates a meal&rsquo;s
+            calories and nutrients.</li>
+        </ul>
+        To do this, the photo you take is sent from your phone directly to
+        Google&rsquo;s Gemini API for analysis; it is not analysed
+        on-device. This only happens if you have entered your own Google
+        Gemini API key in the app, have agreed to the in-app notice shown
+        before the first photo is sent, and then explicitly use one of
+        these features. Nothing is sent otherwise. Your Gemini API key is
+        stored using your device&rsquo;s secure keystore, never in
+        plaintext. Use of the Gemini API is subject to
         <a href="https://policies.google.com/privacy">Google&rsquo;s own
-        privacy policy</a>.</li>
+        privacy policy</a>, and Google may retain what it receives under
+        its terms. In an Aura Selfie Fight against a friend&rsquo;s phone,
+        only your numeric score is sent to the other phone &mdash; never
+        your photo.</li>
       <li><strong>Microphone</strong>: used locally during the &ldquo;Vocal
         Surge&rdquo; mini-game to measure volume (decibels). Audio is not
         recorded to a file or transmitted anywhere &mdash; only the
         momentary volume level is read.</li>
       <li><strong>Activity Recognition / step sensors</strong>: used to
         count daily steps via the device pedometer, which feeds into the
-        in-app fitness score.</li>
+        in-app fitness score and program step goals.</li>
       <li><strong>Health Connect (steps, heart rate, resting heart rate,
         heart rate variability, active calories, distance, floors climbed,
         sleep, blood oxygen, breathing rate, workouts)</strong>: if you
         connect a supported watch/band, the app reads these metrics from
         Android Health Connect (or Apple Health on iOS). Steps reflect real
         activity in your in-app power level. Everything else is only shown
-        back to you (today&rsquo;s readings, and a 30-day daily summary of
-        resting heart rate, heart rate variability, sleep, blood oxygen and
-        breathing rate kept on your device) &mdash; it never affects your
-        power level, isn&rsquo;t used for any medical purpose, and never
-        leaves your device. The app does not write data back to Health
-        Connect or Apple Health, and this data is never sold or used for
+        back to you (today&rsquo;s readings, a daily readiness suggestion,
+        and a 30-day daily summary of resting heart rate, heart rate
+        variability, sleep, blood oxygen and breathing rate kept on your
+        device) &mdash; it never affects your power level, isn&rsquo;t used
+        for any medical purpose, and never leaves your device. The app does
+        not write data back to Health Connect or Apple Health, and this
+        data is never sold or used for advertising.</li>
+      <li><strong>Body, diet and training information you enter</strong>:
+        to personalise programs and scores you can optionally enter your
+        age, sex, height, weight and goal weight; your diet type (for
+        example vegetarian or vegan) and any food allergies; weigh-ins; the
+        calories and protein of meals you log; and gym or home workouts you
+        record in the Workout Tracker (the exercises, sets, reps and
+        weights). All of this is stored on your device only, is never
+        transmitted anywhere, and is never sold or used for
         advertising.</li>
       <li><strong>WHOOP (only when online features are enabled and you
         connect it)</strong>: if you link a WHOOP account, you sign in on
@@ -144,49 +161,69 @@
         back to you and kept in the same on-device 30-day summary. Like the
         watch data, it never affects your power level and is never sold or
         used for advertising. Unlinking revokes the access and deletes the
-        server&rsquo;s copy of it. (Online features are not active in the
-        current version, so no WHOOP data is accessed yet.)</li>
+        server&rsquo;s copy of it. (Online features are not enabled in the
+        current version, so WHOOP linking is unavailable.)</li>
       <li><strong>Bluetooth, nearby devices and (on older Android)
-        location</strong>: used only for Same-Room Duels, to find and
-        connect to a friend&rsquo;s phone in the same room through
-        Google&rsquo;s Nearby Connections. The phones exchange just your
-        fighter name, power level and each duel&rsquo;s score, directly with
-        each other &mdash; nothing goes through a server, and your location
-        is never read or stored (older Android versions require the
-        location permission for any Bluetooth search).</li>
-      <li><strong>Notifications</strong>: used for local reminders (e.g.
-        daily streak alerts). These are scheduled on-device, not sent from
-        a server.</li>
-      <li><strong>Reporting an AI result</strong>: if you report a
-        bio-scanner or meal-scanner result, the report (the result&rsquo;s
-        text, your reason and any note you add) is kept on your device
-        only. It&rsquo;s sent to the developer only if you choose
-        &ldquo;Email it&rdquo;, which opens your own email app.</li>
+        location</strong>: used only when you duel or raid with a friend
+        whose phone is nearby, through Google&rsquo;s Nearby Connections.
+        The two phones connect directly and exchange only what the game
+        needs: your fighter name and look (colour and equipped aura
+        cosmetic), power level, training levels that affect the fight, each
+        game&rsquo;s score, and your moves during a live fight. Nothing
+        goes through a server, nothing is stored after the session, and
+        your location is never read or stored (older Android versions
+        require the location permission for any Bluetooth search).</li>
+      <li><strong>Notifications</strong>: used for local reminders &mdash;
+        daily streak alerts and, only if you turn them on, habit reminders
+        timed to the workday hours you set. All reminders are scheduled on
+        your device, not sent from a server, and can be turned off in the
+        app or in your phone&rsquo;s settings.</li>
+      <li><strong>Photos and storage (Save to phone)</strong>: if you tap
+        <em>Save</em>, the image is saved to your phone&rsquo;s own gallery
+        (in an &ldquo;Aura Leveling&rdquo; album). Nothing is uploaded. On
+        Android 10 and older this needs the storage permission; newer
+        versions don&rsquo;t.</li>
+      <li><strong>Reporting an AI result</strong>: if you report an AI
+        result (from the Bio-scanner, Aura Selfie Fight or Meal Scanner),
+        the report (the result&rsquo;s text, your reason and any note you
+        add) is kept on your device only. It&rsquo;s sent to the developer
+        only if you choose &ldquo;Email it&rdquo;, which opens your own
+        email app.</li>
       <li><strong>Opening your music app</strong>: Hyper-Sprint can open a
         playlist link you saved in your music app. The link stays on your
-        device; nothing about your listening is read by Aura Leveling.</li>
+        device; nothing about your listening is read by Aura
+        Leveling.</li>
     </ul>
 
     <h2>What&rsquo;s stored, and where</h2>
     <ul>
-      <li><strong>On-device</strong>: your profile (workout stats, in-app
-        currency, equipped items, game progress) is stored entirely
-        locally on your device. The app is fully usable offline, and as of
-        this version, that&rsquo;s the only way it stores data &mdash; no
-        cloud sync is active yet.</li>
+      <li><strong>On-device</strong>: your profile &mdash; workout stats,
+        programs and progress, body, diet and allergy information, meal and
+        workout logs, weigh-ins, reminder settings, in-app currency,
+        equipped items and game progress &mdash; is stored entirely locally
+        on your device. The app is fully usable offline, and as of this
+        version, that&rsquo;s the only way it stores data &mdash; no cloud
+        sync is active.</li>
       <li><strong>Optional cloud sync (not yet enabled)</strong>: a future
         version may add an opt-in cloud sync service (Firebase/Firestore)
         so your profile is available across devices and to support online
         features like rival trades/wagers and leaderboards. If and when
         that&rsquo;s turned on, sign-in will be anonymous (no
         email/password required) unless an explicit account system is
-        added, and this section will be updated to describe it before that
+        added, and this policy will be updated to describe it before that
         release ships.</li>
+      <li><strong>In-app purchases</strong>: Star Crystal purchases are
+        processed by Google Play Billing. Your payment details go to
+        Google, never to Aura Leveling; the app only receives a purchase
+        ID, which it keeps on your device so a purchase is never credited
+        twice. Google&rsquo;s own privacy policy covers the payment
+        itself.</li>
       <li><strong>Photos</strong>: a profile picture you choose is stored
-        locally only. A Bio-scanner or Meal Scanner photo is sent to
-        Google&rsquo;s Gemini API for analysis (see above) and is otherwise
-        stored locally only; Aura Leveling itself does not keep a copy on any
-        server.</li>
+        locally only. A photo taken for an AI photo feature is sent to
+        Google&rsquo;s Gemini API for analysis (see above); Aura Leveling
+        itself never keeps a copy on any server. Images you choose to save
+        go to your phone&rsquo;s gallery, and images you choose to share go
+        to the app you pick in your phone&rsquo;s share menu.</li>
     </ul>
 
     <h2>What this app does NOT do</h2>
@@ -194,29 +231,34 @@
       <li>No advertising SDK and no ad tracking.</li>
       <li>No analytics or crash-reporting SDK is currently integrated. (If
         one is added later &mdash; e.g. Firebase Crashlytics/Analytics
-        &mdash; this section will be updated to disclose it before that
+        &mdash; this policy will be updated to disclose it before that
         release ships.)</li>
+      <li>No selling of any data, and no use of health, body, diet or
+        allergy information for advertising.</li>
       <li>Workout-tracking camera frames and microphone audio are never
         uploaded or shared with anyone; they&rsquo;re processed on-device
-        only. The one exception is the optional Bio-scanner / Meal Scanner
-        features, which do send a photo you explicitly capture to
-        Google&rsquo;s Gemini API &mdash; see &ldquo;Bio-scanner and Meal
-        Scanner (Google Gemini)&rdquo; above for details on when and
-        why.</li>
+        only. The one exception is the optional AI photo features, which
+        send a photo you explicitly take to Google&rsquo;s Gemini API
+        &mdash; see &ldquo;AI photo features (Google Gemini)&rdquo; above
+        for when and why.</li>
     </ul>
 
     <h2>Your choices</h2>
     <ul>
       <li>Camera, microphone, activity, notification, Bluetooth / nearby
-        devices and location permissions can be denied or revoked at any
-        time in your device&rsquo;s app settings, and Health Connect access
-        can be withdrawn in Health Connect itself; the relevant features simply won&rsquo;t work without
-        them, but the rest of the app still functions.</li>
+        devices, storage and location permissions can be denied or revoked
+        at any time in your device&rsquo;s app settings, and Health Connect
+        access can be withdrawn in Health Connect itself; the relevant
+        features simply won&rsquo;t work without them, but the rest of the
+        app still functions.</li>
+      <li>Body, diet and allergy details are optional: programs and the
+        workout score work with sensible defaults if you leave them out,
+        and you can change them at any time.</li>
+      <li>Habit reminders are off unless you turn them on, and can be
+        switched off from the program card at any time.</li>
       <li>You can delete your local profile at any time from within the
         app&rsquo;s profile management screen; since all data is stored
-        on-device only (see above), this removes it completely. If cloud
-        sync is enabled in a future version, this section will be updated
-        to describe how cloud-synced data can be deleted as well.</li>
+        on-device only (see above), this removes it completely.</li>
     </ul>
 
     <h2 id="delete-data">Deleting your data</h2>
@@ -226,11 +268,12 @@
       no waiting period.</p>
     <ol>
       <li><strong>Delete a fighter profile</strong>: open the menu (top
-        left) &rarr; <em>Switch Fighter</em> &rarr; tap the bin icon next to
-        the profile. This permanently deletes that profile and everything
-        in it: workout and step history, the 30-day heart, sleep and
-        recovery summary, missions, in-app currency, gear and game
-        progress.</li>
+        left) &rarr; <em>Switch Fighter</em> &rarr; tap the bin icon next
+        to the profile. This permanently deletes that profile and
+        everything in it: workout and step history, programs, body, diet
+        and allergy details, meal and workout logs, weigh-ins, the 30-day
+        heart, sleep and recovery summary, missions, in-app currency, gear
+        and game progress. Any pending habit reminders stop too.</li>
       <li><strong>Delete everything else the app stored</strong>: in your
         phone&rsquo;s <em>Settings &rarr; Apps &rarr; Aura Leveling &rarr;
         Storage &rarr; Clear storage</em>, or uninstall the app. This also
@@ -241,27 +284,31 @@
         permissions. The app only ever reads that data and never writes to
         it, so nothing needs deleting there.</li>
     </ol>
-    <p>Nothing is kept after these steps. The one thing Aura Leveling cannot
-      delete for you is a Bio-scanner or Meal Scanner photo you chose to
-      analyse: it goes straight from your phone to Google&rsquo;s Gemini API
-      and never reaches us, so its retention is governed by
+    <p>Images you saved to your gallery stay there until you delete them in
+      your gallery app. Nothing else is kept after these steps. The one
+      thing Aura Leveling cannot delete for you is a photo you chose to
+      analyse with an AI photo feature: it goes straight from your phone to
+      Google&rsquo;s Gemini API and never reaches us, so its retention is
+      governed by
       <a href="https://policies.google.com/privacy">Google&rsquo;s privacy
-      policy</a>. Questions: <a href="mailto:spandey020700@gmail.com">spandey020700@gmail.com</a>.</p>
+      policy</a>. Questions:
+      <a href="mailto:spandey020700@gmail.com">spandey020700@gmail.com</a>.</p>
 
     <h2>Children&rsquo;s privacy</h2>
     <p>Aura Leveling is not directed at children under 13, and the app does
       not knowingly collect personal information from them. There&rsquo;s
       no account system or sign-up requiring an email or real name (see
       &ldquo;What&rsquo;s stored, and where&rdquo; above &mdash; everything
-      is a locally-stored device profile), and the one feature that ever
-      leaves the device &mdash; Bio-scanner/Meal Scanner photo analysis
-      &mdash; is opt-in, requires the user to supply their own third-party
-      API key first, and does nothing on its own. If you believe a child
-      has used this feature and shared a photo through it, contact us at
-      the email below and we&rsquo;ll help however we can &mdash; though
-      since Aura Leveling never receives or stores that photo itself (it
-      goes directly from your device to Google&rsquo;s Gemini API), removal
-      has to happen on Google&rsquo;s side; see
+      is a locally-stored device profile), and the only feature that ever
+      sends data to a third party &mdash; the AI photo features &mdash; is
+      opt-in, requires the user to supply their own third-party API key
+      first, and does nothing on its own. Weight-loss programs are not
+      offered to users who say they are under 18. If you believe a child
+      has used an AI photo feature and shared a photo through it, contact
+      us at the email below and we&rsquo;ll help however we can &mdash;
+      though since Aura Leveling never receives or stores that photo itself
+      (it goes directly from your device to Google&rsquo;s Gemini API),
+      removal has to happen on Google&rsquo;s side; see
       <a href="https://policies.google.com/privacy">Google&rsquo;s own
       privacy policy</a> for that.</p>
 
