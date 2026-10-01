@@ -73,7 +73,7 @@
 <div class="wrap">
   <div class="card">
     <h1>Privacy Policy for Aura Leveling</h1>
-    <p class="updated">Last updated: September 30, 2026</p>
+    <p class="updated">Last updated: October 1, 2026</p>
 
     <p class="intro">This policy covers what Aura Leveling accesses on your
       device and why. If cloud sync, or any feature that sends data off the
@@ -92,9 +92,11 @@
     <h2>Data this app accesses, and why</h2>
     <ul>
       <li><strong>Camera</strong>: used locally to detect and count body
-        movements during workouts (e.g. push-up and sit-up tracking).
-        Camera frames are processed on-device for pose detection and are
-        never saved or transmitted anywhere. A photo is only sent elsewhere
+        movements during workouts (e.g. push-up and sit-up tracking),
+        including the Aura Trial fitness test and the short &ldquo;hold
+        still&hellip; go&rdquo; checks that confirm a live person is
+        exercising. Camera frames are processed on-device for pose detection
+        and are never saved or transmitted anywhere. A photo is only sent elsewhere
         if you explicitly take one for one of the AI photo features &mdash;
         see &ldquo;AI photo features (Google Gemini)&rdquo; below, the only
         case where that happens.</li>
@@ -129,18 +131,34 @@
         count daily steps via the device pedometer, which feeds into the
         in-app fitness score and program step goals.</li>
       <li><strong>Health Connect (steps, heart rate, resting heart rate,
-        heart rate variability, active calories, distance, floors climbed,
-        sleep, blood oxygen, breathing rate, workouts)</strong>: if you
-        connect a supported watch/band, the app reads these metrics from
-        Android Health Connect (or Apple Health on iOS). Steps reflect real
-        activity in your in-app power level. Everything else is only shown
-        back to you (today&rsquo;s readings, a daily readiness suggestion,
-        and a 30-day daily summary of resting heart rate, heart rate
-        variability, sleep, blood oxygen and breathing rate kept on your
-        device) &mdash; it never affects your power level, isn&rsquo;t used
-        for any medical purpose, and never leaves your device. The app does
-        not write data back to Health Connect or Apple Health, and this
-        data is never sold or used for advertising.</li>
+        heart rate variability, active calories, total calories burned,
+        distance, floors climbed, sleep, blood oxygen, breathing rate,
+        workouts, weight, height, body fat, blood pressure,
+        hydration)</strong>: if you connect a supported watch/band, the app
+        reads whichever of these metrics you allow from Android Health
+        Connect (or Apple Health on iOS). You can allow some and not others.
+        How they&rsquo;re used, all on your device:
+        <ul>
+          <li>Steps count toward your in-app power level.</li>
+          <li>Your resting heart rate, if available, is one part of the
+            optional Aura Trial fitness score, which sets part of your power
+            level.</li>
+          <li>Heart rate during a camera-tracked workout is compared with
+            your resting heart rate to confirm the workout was real; if it
+            didn&rsquo;t rise, those reps count as casual rather than
+            verified.</li>
+          <li>Weight and height keep the body stats used for your programs
+            and diet targets up to date.</li>
+          <li>Everything is shown back to you (today&rsquo;s readings, a
+            daily readiness suggestion, and a 30-day daily summary of resting
+            heart rate, heart rate variability, sleep, blood oxygen and
+            breathing rate).</li>
+        </ul>
+        Manually typed entries in Health Connect are ignored for steps and
+        heart rate. None of this data is used for any medical purpose, and
+        it never leaves your device. The app does not write data back to
+        Health Connect or Apple Health, and this data is never sold or used
+        for advertising.</li>
       <li><strong>Body, diet and training information you enter</strong>:
         to personalise programs and scores you can optionally enter your
         age, sex, height, weight and goal weight; your diet type (for
